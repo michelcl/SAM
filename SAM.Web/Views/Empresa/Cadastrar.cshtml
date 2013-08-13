@@ -1,0 +1,94 @@
+﻿@model SAM.Web.ViewModels.Empresa.EmpresaCadastrarViewModel
+
+@{
+    ViewBag.Title = "Cadastrar";
+    Layout = "~/Views/Shared/_LayoutLogado.cshtml";
+}
+
+@section JavascriptSection{
+    <script src="@Url.Content("~/Scripts/Empresa/Cadastrar.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.mask.min.js")"></script>
+}
+
+<h2>Cadastrar</h2>
+
+<form method="post" action="~/Empresa/Cadastrar/" class="forms columnar 1" id="formCadastrar">
+    @Html.HiddenFor(model => model.IdEmpresa)
+    @Html.HiddenFor(model => model.DominioInicial)
+    
+    <h4>Organização</h4>
+    <fieldset>
+        <ul>
+            <li>
+                <fieldset>
+                    <section>
+                        <label for="" class="bold">Ativo</label>
+                    </section>
+                    @if (!HttpContext.Current.User.IsInRole("Administrador do sistema"))
+                    {   
+                        @Html.HiddenFor(model => model.Ativo)
+                        <input type="checkbox" id="Ativo" name="Ativo" @(@Model.Ativo ? "checked" : "") disabled="disabled" value="true">
+                    }
+                    else
+                    {
+                        <input type="checkbox" name="Ativo" @(@Model.Ativo ? "checked" : "") value="true">
+                    }
+                </fieldset>
+            </li>
+
+            <li>
+                @Html.LabelFor(model => model.RazaoSocial, new { @class = "bold" })
+                @Html.TextBoxFor(model => model.RazaoSocial, new { @size = "40", @autofocus = "", @maxlength = "100" })
+                <div class="descr">@Html.ValidationMessageFor(model => model.RazaoSocial, null, new { @class = "validacao" })</div>
+            </li>
+
+            <li>
+                @Html.LabelFor(model => model.NomeFantasia, new { @class = "bold" })
+                @Html.TextBoxFor(model => model.NomeFantasia, new { @size = "40", @maxlength = "100" })
+                <div class="descr">@Html.ValidationMessageFor(model => model.NomeFantasia, null, new { @class = "validacao" })</div>
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Cnpj, new { @class = "bold" })
+                @Html.TextBoxFor(model => model.Cnpj, new { @size = "40", @maxlength = "100" })
+                <div class="descr">@Html.ValidationMessageFor(model => model.Cnpj, null, new { @class = "validacao" })</div>
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Dominio, new { @class = "bold" })
+                @@ @Html.TextBoxFor(model => model.Dominio, new { @size = "40", @maxlength = "100" })
+                <div class="descr">Compõem o login do usuário. @Html.ValidationMessageFor(model => model.Dominio, null, new { @class = "validacao" })</div>
+            </li>
+
+            <li>
+                @Html.LabelFor(model => model.Telefone1, new { @class = "bold" })
+                @Html.TextBoxFor(model => model.Telefone1, new { @size = "40", @maxlength = "100" })
+                <div class="descr">@Html.ValidationMessageFor(model => model.Telefone1, null, new { @class = "validacao" })</div>
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Telefone2, new { @class = "bold" })
+                @Html.TextBoxFor(model => model.Telefone2, new { @size = "40", @maxlength = "100" })
+                <div class="descr">@Html.ValidationMessageFor(model => model.Telefone2, null, new { @class = "validacao" })</div>
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Site, new { @class = "bold" })
+                @Html.TextBoxFor(model => model.Site, new { @size = "40", @maxlength = "100" })
+                <div class="descr">@Html.ValidationMessageFor(model => model.Site, null, new { @class = "validacao" })</div>
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Segmento, new { @class = "bold" })
+                @Html.TextBoxFor(model => model.Segmento, new { @size = "40", @maxlength = "100" })
+                <div class="descr">@Html.ValidationMessageFor(model => model.Segmento, null, new { @class = "validacao" })</div>
+            </li>
+
+        </ul>
+
+    </fieldset>
+
+    <ul>
+        <li class="push">
+            <input type="hidden" id="acao" name="acao" value="" />
+            <input type="submit" class="btn" value="Salvar" onclick="$('#acao').val($(this).val());" />
+            <input type="submit" class="btn" value="Salvar e Novo" onclick="$('#acao').val($(this).val());" />
+            <input type="button" name="send" class="btn" value="Voltar" onclick="Voltar();" />
+        </li>
+    </ul>
+</form>

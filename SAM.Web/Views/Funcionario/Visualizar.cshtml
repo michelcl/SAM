@@ -1,0 +1,144 @@
+﻿@model SAM.Web.ViewModels.Funcionario.FuncionarioVisualizarViewModel
+@{
+    ViewBag.Title = "Visualizar";
+    Layout = "~/Views/Shared/_LayoutLogado.cshtml";
+}
+@section JavascriptSection{
+
+}
+
+<div class="forms columnar">
+    <fieldset>
+        <div class="row" style="margin: 0px; padding: 0px;">
+            <div class="sixth">
+                <img id="fotoFuncionario" src="@Url.Content(!string.IsNullOrEmpty(Model.Foto) ? "/imagem/" + Model.Foto : "/Imagens/usuario.png")" style="height: 100px; width: 100px;" />
+            </div>
+            <div class="fivesixth" style="vertical-align: bottom;">
+                <h3>@Html.DisplayFor(model => model.Nome)</h3>
+                <h5>@Html.DisplayFor(model => model.Cargo)</h5>
+            </div>
+        </div>
+    </fieldset>
+
+    <h4>Dados Pessoais</h4>
+    <fieldset>
+        <ul>
+            <li>
+                <fieldset>
+                    <section>
+                        <label for="" class="bold">Ativo</label>
+                    </section>
+                    <input type="checkbox" id="Ativo" name="Ativo" @(@Model.Ativo ? "checked" : "") disabled="disabled" value="true">
+                </fieldset>
+            </li>
+
+            <li>
+                @Html.LabelFor(model => model.Nome)
+                @Html.DisplayFor(model => model.Nome)&nbsp;
+            </li>
+
+            <li>
+                @Html.LabelFor(model => model.Login)
+                @Html.DisplayFor(model => model.Login)@@@Model.DominioEmpresa&nbsp;
+            </li>
+
+
+            <li>
+                <label for="" class="bold">Papel base</label>
+                @Html.DisplayFor(model => model.Papel)&nbsp;
+            </li>
+
+            <li>
+                @Html.LabelFor(model => model.Email)
+                @Html.DisplayFor(model => model.Email)&nbsp;
+            </li>
+
+            <li>
+                @Html.LabelFor(model => model.Matricula)
+                @Html.DisplayFor(model => model.Matricula)&nbsp;
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Sexo)
+                @Html.DisplayFor(model => model.Sexo)&nbsp;
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Skype)
+                @Html.DisplayFor(model => model.Skype)&nbsp;
+            </li>
+
+            <li>
+                @Html.LabelFor(model => model.DataNascimento)
+                @Html.DisplayFor(model => model.DataNascimento)&nbsp;
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Idade)
+                @Html.DisplayFor(model => model.Idade)&nbsp;
+            </li>
+            <li>
+                @Html.LabelFor(model => model.DataFuncao)
+                @Html.DisplayFor(model => model.DataFuncao)&nbsp;
+            </li>
+            <li>
+                @Html.LabelFor(model => model.TempoFuncao)
+                @Html.DisplayFor(model => model.TempoFuncao)&nbsp;
+            </li>
+
+            <li>
+                @Html.LabelFor(model => model.Telefone)
+                @Html.DisplayFor(model => model.Telefone)&nbsp;
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Celular)
+                @Html.DisplayFor(model => model.Celular)&nbsp;
+            </li>
+            <li>
+                @Html.LabelFor(model => model.NomeGestor)
+                @Html.DisplayFor(model => model.NomeGestor)&nbsp;
+            </li>
+
+            <li>
+                @Html.LabelFor(model => model.NomeEmpresa)
+                @Model.NomeEmpresa&nbsp;
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Departamento)
+                @Html.DisplayFor(model => model.Departamento)&nbsp;
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Cargo)
+                @Html.DisplayFor(model => model.Cargo)&nbsp;
+            </li>
+        </ul>
+
+    </fieldset>
+    <!--
+<h4>Endereço</h4>
+<fieldset>
+    <ul>
+        <li>
+            <label for="" class="bold">Rua</label>
+            <input type="text" name="" id="" size="40" value="" />
+        </li>
+        <li>
+            <label for="" class="bold">CEP</label>
+            <input type="text" name="" id="" size="40" value="" />
+        </li>
+        <li>
+            <label for="" class="bold">Cidade</label>
+            <input type="text" name="" id="" size="40" value="" />
+        </li>
+        <li>
+            <label for="" class="bold">Estado</label>
+            <input type="text" name="" id="" size="40" value="" />
+        </li>
+    </ul>
+</fieldset>
+        -->
+    <ul>
+        <li class="push">
+            <a href="/Funcionario/Cadastrar/@Model.IdFuncionario">
+                <button class="btn">Editar</button></a>
+            <input type="button" name="send" class="btn" value="Voltar" onclick="Voltar();" />
+        </li>
+    </ul>
+</div>

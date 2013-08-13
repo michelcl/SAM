@@ -1,0 +1,68 @@
+﻿@model SAM.Web.ViewModels.Home.LoginViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/Kube/kube.css")
+    @Styles.Render("~/Content/Kube/login.css")
+    <script src="@Url.Content("~/Scripts/jquery-1.9.1.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+    <title>SAM - Sistema Avaliação Multifuncional</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <img src="~/Imagens/logo_sam.png" class="logo" />
+        </header>
+        <div id="main">
+            <div class="row">
+                <div class="twofifth">
+                    <div class="inner">
+                        <div class="login">
+                            @using (Html.BeginForm("Login", "Home", new { returnUrl = Request.QueryString["ReturnUrl"] }, FormMethod.Post, new { @class = "forms" }))
+                            {
+                                <ul>
+                                    <li>
+                                        @Html.LabelFor(model => model.Login, new { @class = "bold" })
+                                        @Html.TextBoxFor(model => model.Login, new { @autofocus = "" })
+                                        @Html.ValidationMessageFor(model => model.Login, null, new { @class = "validacao" })
+                                    </li>
+                                    <li>
+
+                                        @Html.LabelFor(model => model.Senha, new { @class = "bold" })
+                                        @Html.PasswordFor(model => model.Senha)
+                                        @Html.ValidationMessageFor(model => model.Senha, null, new { @class = "validacao" })
+                                    </li>
+                                    <li>
+                                        <input type="submit" name="send" class="btn" value="Login" />
+                                        <a href="/Home/EsqueciMinhaSenha">Esqueceu sua senha?</a>
+                                    </li>
+                                </ul>
+                            }
+                            @Html.ValidationSummary(true, null, new { @class = "validacao" })
+                            Não tem conta? <a href="#">Entre em contato</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="threefifth">
+                    <div class="propaganda">
+                        <h3>Centro de Treinamento</h3>
+                        <p>
+                            <img src="~/Imagens/logo_bordini.jpg" />
+                        </p>
+                        <p>Coach "Uma nova perspectiva"</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">&copy; Copyright 2013 - Bordini & Bordini Consultoria</footer>
+    </div>
+</body>
+</html>

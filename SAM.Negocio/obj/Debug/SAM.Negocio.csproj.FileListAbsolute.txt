@@ -1,0 +1,31 @@
+C:\Users\gasparin\projetos\SAM\SAM.Negocio\bin\Debug\SAM.Negocio.dll
+C:\Users\gasparin\projetos\SAM\SAM.Negocio\bin\Debug\SAM.Negocio.pdb
+C:\Users\gasparin\projetos\SAM\SAM.Negocio\obj\Debug\SAM.Negocio.csprojResolveAssemblyReference.cache
+C:\Users\gasparin\projetos\SAM\SAM.Negocio\obj\Debug\SAM.Negocio.dll
+C:\Users\gasparin\projetos\SAM\SAM.Negocio\obj\Debug\SAM.Negocio.pdb
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Negocio\bin\Debug\SAM.Negocio.dll
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Negocio\bin\Debug\SAM.Negocio.pdb
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Negocio\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Negocio\bin\Debug\SAM.Dados.dll
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Negocio\bin\Debug\SAM.POCO.dll
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Negocio\bin\Debug\SAM.Util.dll
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Negocio\bin\Debug\SAM.Dados.pdb
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Negocio\bin\Debug\SAM.POCO.pdb
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Negocio\bin\Debug\SAM.Util.pdb
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Negocio\obj\Debug\SAM.Negocio.csprojResolveAssemblyReference.cache
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Negocio\obj\Debug\SAM.Negocio.dll
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Negocio\obj\Debug\SAM.Negocio.pdb
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Negocio\bin\Debug\SAM.Negocio.dll
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Negocio\bin\Debug\SAM.Negocio.pdb
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Negocio\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Negocio\bin\Debug\MySql.Data.dll
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Negocio\bin\Debug\SAM.Dados.dll
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Negocio\bin\Debug\SAM.POCO.dll
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Negocio\bin\Debug\SAM.Util.dll
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Negocio\bin\Debug\SAM.Dados.pdb
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Negocio\bin\Debug\SAM.POCO.pdb
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Negocio\bin\Debug\SAM.Util.pdb
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Negocio\bin\Debug\pt-BR\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Negocio\obj\Debug\SAM.Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Negocio\obj\Debug\SAM.Negocio.dll
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Negocio\obj\Debug\SAM.Negocio.pdb

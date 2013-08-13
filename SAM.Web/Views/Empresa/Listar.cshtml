@@ -1,0 +1,25 @@
+﻿@model List<SAM.Web.ViewModels.Funcionario.FuncionarioListaViewModel>
+
+@{
+    ViewBag.Title = "Organização";
+    Layout = "~/Views/Shared/_LayoutLogado.cshtml";
+}
+
+
+@section JavascriptSection{
+    <script src="@Url.Content("~/Scripts/Empresa/Listar.js")"></script>
+}
+
+<h3>Organizações</h3>
+
+<div>
+    <a href="/Empresa/Cadastrar/0">
+        <button class="btn btn-round">Novo</button></a>
+    <div class="" style="float: right;">
+        <form>
+            <input type="text" id="pesquisa" class="input-search" style="width:300px" autofocus/>
+            <button class="btn btn-round" id="btnPesquisar" type="submit">Pesquisar</button>
+        </form>
+    </div>
+</div>
+<div id="EmpresaLista" style="margin: auto;"></div>

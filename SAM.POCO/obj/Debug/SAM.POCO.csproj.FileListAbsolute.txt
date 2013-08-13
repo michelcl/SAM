@@ -1,0 +1,14 @@
+C:\Users\gasparin\projetos\SAM\SAM.POCO\bin\Debug\SAM.POCO.dll
+C:\Users\gasparin\projetos\SAM\SAM.POCO\bin\Debug\SAM.POCO.pdb
+C:\Users\gasparin\projetos\SAM\SAM.POCO\obj\Debug\SAM.POCO.csprojResolveAssemblyReference.cache
+C:\Users\gasparin\projetos\SAM\SAM.POCO\obj\Debug\SAM.POCO.dll
+C:\Users\gasparin\projetos\SAM\SAM.POCO\obj\Debug\SAM.POCO.pdb
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.POCO\bin\Debug\SAM.POCO.dll
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.POCO\bin\Debug\SAM.POCO.pdb
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.POCO\obj\Debug\SAM.POCO.dll
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.POCO\obj\Debug\SAM.POCO.pdb
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.POCO\obj\Debug\SAM.POCO.csprojResolveAssemblyReference.cache
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.POCO\bin\Debug\SAM.POCO.dll
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.POCO\bin\Debug\SAM.POCO.pdb
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.POCO\obj\Debug\SAM.POCO.dll
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.POCO\obj\Debug\SAM.POCO.pdb

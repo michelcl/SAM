@@ -1,0 +1,82 @@
+﻿@model SAM.Web.ViewModels.Empresa.EmpresaVisualizarViewModel
+
+@{
+    ViewBag.Title = "Visualizar";
+    Layout = "~/Views/Shared/_LayoutLogado.cshtml";
+}
+
+@section JavascriptSection{
+    <script src="@Url.Content("~/Scripts/Empresa/Visualizar.js")"></script>
+}
+
+<div class="forms columnar 1">
+    @Html.HiddenFor(model => model.IdEmpresa)
+    @Html.HiddenFor(model => model.DominioInicial)
+
+    <h4>Organização</h4>
+    <fieldset>
+        <ul>
+            <li>
+                <fieldset>
+                    <section>
+                        <label for="" class="bold">Ativo</label>
+                    </section>
+                    <input type="checkbox" name="Ativo" @(@Model.Ativo ? "checked" : "") disabled="disabled" value="true">
+                </fieldset>
+            </li>
+
+            <li>
+                @Html.LabelFor(model => model.RazaoSocial)
+                @Html.DisplayFor(model => model.RazaoSocial)&nbsp;
+            </li>
+
+            <li>
+                @Html.LabelFor(model => model.NomeFantasia)
+                @Html.DisplayFor(model => model.NomeFantasia)&nbsp;
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Cnpj)
+                @Html.DisplayFor(model => model.Cnpj)&nbsp;
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Dominio)
+                @@@Html.DisplayFor(model => model.Dominio)&nbsp;
+            </li>
+
+            <li>
+                @Html.LabelFor(model => model.Telefone1)
+                @Html.DisplayFor(model => model.Telefone1)&nbsp;
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Telefone2)
+                @Html.DisplayFor(model => model.Telefone2)&nbsp;
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Site)
+                @Html.DisplayFor(model => model.Site)&nbsp;
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Segmento)
+                @Html.DisplayFor(model => model.Segmento)&nbsp;
+            </li>
+        </ul>
+
+    </fieldset>
+
+    <ul>
+        <li class="push">
+            <a href="/Empresa/Cadastrar/@Model.IdEmpresa">
+                <button class="btn">Editar</button></a>
+            <input type="button" name="send" class="btn" value="Voltar" onclick="Voltar();" />
+        </li>
+    </ul>
+</div>
+<br />
+<br />
+<h4>Colaborador</h4>
+<div style="text-align: center;">
+    <a href="/Funcionario/Cadastrar/0">
+        <button class="btn btn-round">Novo Colaborador</button></a>
+</div>
+<div id="FuncionarioLista" style="margin: auto;"></div>
+<a href="/Funcionario">Ver mais</a>

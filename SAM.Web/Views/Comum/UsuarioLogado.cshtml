@@ -1,0 +1,22 @@
+﻿@model SAM.Web.ViewModels.Comum.UsuarioLogadoViewModel
+@{
+    Layout = "";
+}
+<div style="float: left">
+    <img src="@Url.Content(!string.IsNullOrEmpty(Model.Foto) ? "/imagem/" + Model.Foto + "/50/50" : "/Imagens/usuario.png")" style="height: 50px; width: 50px;" />
+    <ul>
+        <li class="nome-usuario">@Model.Nome <a href="/Home/Logout" class="btn">Sair</a></li>
+        <li>@Model.Login</li>
+    </ul>
+    <div style="float: left">
+        <form id="formComboEmpresa" method="post" action="~/Home/AtualizarEmpresaLogada/">
+            @if (Model.ListaEmpresa != null)
+            {
+                @Html.DropDownListFor(model => model.IdEmpresa, new SelectList(Model.ListaEmpresa, "IdEmpresa", "NomeFantasia")
+                        .Concat(Enumerable.Repeat(new SelectListItem() { Value = "", Text = "-- Selecione a Empresa" }, 1))
+                        .OrderBy(p => p.Text), new { @id = "IdEmpresaCombo" })
+                <button type="submit" class="btn">Mudar</button>
+            }
+        </form>
+    </div>
+</div>

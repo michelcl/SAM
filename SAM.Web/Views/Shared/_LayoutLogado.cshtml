@@ -1,0 +1,72 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/Kube/kube.css")
+    @Styles.Render("~/Content/Kube/LayoutLogado.css")
+
+    @Styles.Render("~/Content/themes/base/jquery-ui.css")
+
+    @Styles.Render("~/Scripts/jtable/themes/lightcolor/blue/jtable.css")
+
+    <script src="@Url.Content("~/Scripts/jquery-1.9.1.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.cookie.js")"></script>
+
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.10.2.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.ui.datepicker-pt-BR.min.js")"></script>
+
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.js")"></script>
+
+    <script src="@Url.Content("~/Scripts/jquery-extend.js")"></script>
+    <script src="@Url.Content("~/Scripts/biblioteca.js")"></script>
+
+    <script src="@Url.Content("~/Scripts/jtable/jquery.jtable.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jtable/localization/jquery.jtable.pt-BR.js")"></script>
+
+    <script src="@Url.Content("~/Scripts/fileupload/vendor/jquery.ui.widget.js")"></script>
+    <script src="@Url.Content("~/Scripts/fileupload/jquery.iframe-transport.js")"></script>
+    <script src="@Url.Content("~/Scripts/fileupload/jquery.fileupload.js")"></script>
+
+    @if (IsSectionDefined("JavascriptSection"))
+    {
+        @RenderSection("JavascriptSection");
+    }
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <img src="~/Imagens/logo_cliente.png" class="logo" />
+            <div class="usuario-logado">
+                @Html.Action("HeaderUsuarioLogado", "Header")
+            </div>
+        </header>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="/Home/Logado" class="btn btn-small">Início</a></li>
+                    <li><a href="/Funcionario/" class="btn btn-small">Colaborador</a></li>
+                    <li><a href="/Empresa/" class="btn btn-small">Organização</a></li>
+                    <li><a href="#" class="btn btn-small">Avaliação</a></li>
+                    <li><a href="#" class="btn btn-small">Plano de ação</a></li>
+                    <li><a href="#" class="btn btn-small">Feedback</a></li>
+                    <li><a href="#" class="btn btn-small">Indicadores</a></li>
+                    <li><a href="#" class="btn btn-small">Cargo</a></li>
+                    <li><a href="#" class="btn btn-small">Relatórios</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="modalPopup" title="Sucesso"></div>
+        <div class="principal">
+            @RenderBody()
+        </div>
+        <footer id="footer">&copy; Copyright 2013 - Bordini & Bordini Consultoria</footer>
+    </div>
+</body>
+</html>

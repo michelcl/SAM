@@ -1,0 +1,16 @@
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Dados\bin\Debug\SAM.Dados.dll
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Dados\bin\Debug\SAM.Dados.pdb
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Dados\bin\Debug\MySql.Data.dll
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Dados\bin\Debug\SAM.POCO.dll
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Dados\bin\Debug\SAM.POCO.pdb
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Dados\obj\Debug\SAM.Dados.csprojResolveAssemblyReference.cache
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Dados\obj\Debug\SAM.Dados.dll
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Dados\obj\Debug\SAM.Dados.pdb
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Dados\bin\Debug\SAM.Dados.dll
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Dados\bin\Debug\SAM.Dados.pdb
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Dados\bin\Debug\MySql.Data.dll
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Dados\bin\Debug\SAM.POCO.dll
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Dados\bin\Debug\SAM.POCO.pdb
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Dados\obj\Debug\SAM.Dados.csprojResolveAssemblyReference.cache
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Dados\obj\Debug\SAM.Dados.dll
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Dados\obj\Debug\SAM.Dados.pdb

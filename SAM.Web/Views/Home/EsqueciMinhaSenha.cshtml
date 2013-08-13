@@ -1,0 +1,59 @@
+﻿@model SAM.Web.ViewModels.Home.EsqueciMinhaSenhaViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/Kube/kube.css")
+    @Styles.Render("~/Content/Kube/login.css")
+    <script src="@Url.Content("~/Scripts/jquery-1.9.1.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+    <title>Redefinir Senha</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <img src="~/Imagens/logo_sam.png" class="logo" />
+        </header>
+        <div id="main">
+            <div class="inner">
+                <div class="login">
+                    @using (Html.BeginForm("EsqueciMinhaSenha", "Home", FormMethod.Post, new { @class = "forms" }))
+                    {
+                        if (Request.QueryString["msg"] != "ok")
+                        {
+                        <ul>
+                            <li>Se você esqueceu sua senha, digite no campo abaixo o e-mail do seu login.<br />
+                                Você receberá em seu e-mail um link. Esse link ajudará a redefinir sua senha.</li>
+                            <li>
+                                @Html.LabelFor(model => model.Login, new { @class = "bold" })
+                                @Html.TextBoxFor(model => model.Login, new { @autofocus = "", @style = "width:400px;" })
+                                <input type="submit" name="send" class="btn btn-big" value="Enviar" />
+                                <br />
+                                @Html.ValidationMessageFor(model => model.Login, null, new { @class = "validacao" })
+                                @Html.ValidationSummary(true, null, new { @class = "validacao" })
+                            </li>
+                        </ul>
+                        }
+                        else
+                        {
+                        <ul>
+                            <li>Você irá receber um e-mail com informações para redefinir sua senha.<br />
+                                Caso o e-mail demore para chegar, verifique em sua caixa de spam.
+                            </li>
+                        </ul>
+                        }
+
+                    }
+                </div>
+            </div>
+        </div>
+        <footer id="footer">&copy; Copyright 2013 - Bordini & Bordini Consultoria</footer>
+    </div>
+</body>
+</html>

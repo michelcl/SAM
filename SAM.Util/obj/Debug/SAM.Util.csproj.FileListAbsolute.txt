@@ -1,0 +1,9 @@
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Util\bin\Debug\SAM.Util.dll
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Util\bin\Debug\SAM.Util.pdb
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Util\obj\Debug\SAM.Util.csprojResolveAssemblyReference.cache
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Util\obj\Debug\SAM.Util.dll
+C:\Users\gasparin\projetos\SAM\Fonte\SAM.Util\obj\Debug\SAM.Util.pdb
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Util\bin\Debug\SAM.Util.dll
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Util\bin\Debug\SAM.Util.pdb
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Util\obj\Debug\SAM.Util.dll
+C:\Users\Michel\Documents\Visual Studio 2012\Projects\Fonte\SAM.Util\obj\Debug\SAM.Util.pdb

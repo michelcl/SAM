@@ -1,0 +1,75 @@
+﻿@model SAM.Web.ViewModels.Home.RedefinirSenhaViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/Kube/kube.css")
+    @Styles.Render("~/Content/Kube/login.css")
+    <script src="@Url.Content("~/Scripts/jquery-1.9.1.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+    <title>Redefinir Senha</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <img src="~/Imagens/logo_sam.png" class="logo" />
+        </header>
+        <div id="main">
+            <div class="inner">
+                <div class="login">
+                    @using (Html.BeginForm("RedefinirSenha", "Home", FormMethod.Post, new { @class = "forms" }))
+                    {
+                        
+                        if(Request["msg"] =="ok")
+                        {
+                        <ul>
+                            <li>Sua senha foi alterada com sucesso.<br />
+                                <a href="/">Clique aqui</a> para ir para a tela de login.
+                            </li>
+                        </ul>                            
+                        }
+                        else if (Model == null)
+                        {
+                        <ul>
+                            <li>Login não encontrado ou sem solicitação para redefinição de senha.</li>
+                        </ul>                            
+                        }
+                        else
+                        {
+                        @Html.HiddenFor(p => p.Guid)
+                        @Html.HiddenFor(p => p.Login)
+                        <ul>
+                            <li>Para redefinir sua senha, utilize o formulário abaixo.</li>
+                            <li>
+                                <b>Login</b>
+                                <br />@Html.DisplayFor(model => model.Login, new { @class = "bold" })
+                            </li>
+                            <li>
+                                @Html.LabelFor(p => p.Senha, new { @class = "bold" })
+                                @Html.PasswordFor(p => p.Senha)
+                                @Html.ValidationMessageFor(p => p.Senha, null, new { @class = "validacao" })
+                            </li>
+                            <li>
+                                @Html.LabelFor(p => p.ConfirmarSenha, new { @class = "bold" })
+                                @Html.PasswordFor(p => p.ConfirmarSenha)
+                                @Html.ValidationMessageFor(p => p.ConfirmarSenha, null, new { @class = "validacao" })
+                            </li>
+                            <li>
+                                <input type="submit" name="send" class="btn" value="Alterar Senha" />
+                            </li>
+                        </ul>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+        <footer id="footer">&copy; Copyright 2013 - Bordini & Bordini Consultoria</footer>
+    </div>
+</body>
+</html>
